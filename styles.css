@@ -1,8 +1,8 @@
+/* Estilos básicos que aplican a móviles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px red solid ; */
 }
 
 body {
@@ -16,16 +16,18 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 200px;
+  padding: 20px 20px;
+  flex-direction: column;
 }
 
 .links {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 5px;
   padding: 0;
-  gap: 15px;
-  font-size: 18px;
+  gap: 10px;
+  font-size: 16px;
+  flex-wrap: wrap;
 }
 
 .links li a {
@@ -45,17 +47,18 @@ body {
 
 .h1 {
   color: #f9faf8;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 900;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 8px;
 }
 
 .paragraph {
   color: #f5f5f5;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
-  width: 500px;
+  width: auto;
+  padding: 0 10px;
 }
 
 .sign-up {
@@ -70,6 +73,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .sign-up:hover {
@@ -79,36 +83,37 @@ body {
 
 main {
   display: flex;
-  align-items: center; /* Align items vertically centered */
-  justify-content: space-between;
-  padding: 0 200px 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 20px;
 }
 
 .content-right {
   display: flex;
-  align-items: center; /* Centers the image vertically */
+  justify-content: center;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   max-width: 100%;
 }
 
 .hero-img {
-  width: 550px;
-  height: 350px;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
   border-radius: 8px;
-  flex-wrap: wrap;
 }
 
 .section-title {
   color: #181000;
-  font-size: 39px;
+  font-size: 36px;
   font-weight: 900;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 section {
@@ -117,55 +122,59 @@ section {
 
 .container {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 50px 250px;
-  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card img {
   border-radius: 40px;
   padding: 12px;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
 
 .card p {
   text-align: center;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 16px;
   color: #343a40;
-  width: 140px;
-  padding-bottom: 50px;
+  width: auto;
 }
 
 .quote-text {
   background-color: #dee2e6;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 300;
   font-style: italic;
-  padding: 100px 0 0;
+  padding: 50px 20px;
   color: #1f2937;
 }
 
 .quote-text p {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   color: #1f2937;
   font-weight: 200;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .author {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   text-align: right;
 }
 
 .author p {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .signup-section {
@@ -173,11 +182,13 @@ section {
   color: #f7f1de;
   max-width: 1000px;
   min-height: 80px;
-  margin: 50px auto;
+  margin: 20px auto;
   border-radius: 8px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .signup-section .text-content {
@@ -186,23 +197,8 @@ section {
   justify-content: center;
 }
 
-.signup-section {
-  background-color: #ee9b00;
-  color: #f7f0de;
-  width: 1000px;
-  margin: 50px auto;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.text-content {
-  margin: 50px 90px;
-}
-
 .signup-section h3 {
-  font-size: 23px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -212,8 +208,8 @@ section {
 
 .section-button {
   display: flex;
-  align-items: center;
-  margin: 50px 90px;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .section-button button {
@@ -224,16 +220,143 @@ section {
   border: none;
   height: 40px;
   padding: 8px 16px;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .footer {
-
-color: #f7f0de;
-font-size: 15px;
-text-align: center;
-padding: 30px 0;
+  color: #f7f0de;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 0;
 }
 
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .header {
+    padding: 50px 200px;
+    flex-direction: row;
+  }
+
+  .links {
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    max-width: 100%;
+  }
+
+  .h1 {
+    font-size: 48px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 200px 50px;
+  }
+
+  .content-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    font-size: 39px;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 250px;
+    gap: 32px;
+  }
+
+  .card img {
+    border-radius: 40px;
+    padding: 12px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #343a40;
+    width: 140px;
+    padding-bottom: 50px;
+  }
+
+  .quote-text {
+    background-color: #dee2e6;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 100px 0 0;
+    color: #1f2937;
+  }
+
+  .quote-text p {
+    width: 50%;
+    margin: 0 auto;
+    color: #1f2937;
+    font-weight: 200;
+    font-size: 36px;
+  }
+
+  .author {
+    padding-bottom: 100px;
+    text-align: right;
+  }
+
+  .author p {
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .signup-section {
+    background-color: #ee9b00;
+    color: #f7f1de;
+    max-width: 1000px;
+    min-height: 80px;
+    margin: 50px auto;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+
+  .signup-section .text-content {
+    margin: 50px 90px;
+  }
+
+  .section-button {
+    margin: 50px 90px;
+
+    .section-button button {
+      font-size: 18px;
+    }
+
+    .footer {
+      padding: 30px 0;
+    }
+  }
+}
